@@ -2,8 +2,6 @@
 
 Esse projeto foi construído para fins didáticos no evento Semana da Evolução na Programação.
 
-Esta é a base para o projeto, com todas as imagens necessárias.
-
 ## Tecnologias
 
 - NextJs na sua versão 13.4.1
