@@ -1,11 +1,13 @@
-import Image from 'next/image'
-import Styles from './logo.module.css'
+import Image from 'next/image';
+import Styles from './Logo.module.css';
 
-export default function Logo() {
+const Logo = () => {
     return (
         <div className={Styles.logo}>
-            <Image src='/logo.svg' width={60} height={60} />
-            <h1>DevSteam</h1>
+            <Image src='/logo.svg'  width={60} height={60} />
+            <h1 className={Styles.name}>DevSteam</h1>
         </div>
     )
 }
+
+export default Logo;

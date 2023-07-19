@@ -1,7 +1,9 @@
-import Styles from './subtitle.module.css'
+import Styles from "./subtitle.module.css";
 
-export default function Subtitle({children}) {
+const Subtitle = (props) => {
     return (
-        <h2 className={Styles.subtitle}>{children}</h2>
+        <h2 className={Styles.subtitle}>{props.children}</h2>
     )
 }
+
+export default Subtitle;

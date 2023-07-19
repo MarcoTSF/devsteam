@@ -1,7 +1,12 @@
-import Styles from './button.module.css'
+import styles from "./button.module.css";
 
-export default function Button({children}) {
-    return (
-        <button className={Styles.button}>{children}</button>
-    )
-}
+const Button = ({ children, fullWidth, ...props }) => {
+  return <button className={`
+        ${styles.button} 
+        ${fullWidth && styles.fullWidth}`
+      } {...props}>
+        {children}
+      </button>;
+};
+
+export default Button;

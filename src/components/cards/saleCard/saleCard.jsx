@@ -1,22 +1,26 @@
-import Image from 'next/image'
-import Styles from './saleCard.module.css'
-import Button from '@/components/forms/button/button'
+import Image from "next/image";
 
-export default function SaleCard() {
-    return (
-        <div className={Styles.salecard}>
-            <Image src='/products/league-of-legends.jpg' width={250} height={300} />
-            <div className={Styles.info}>
-                <h3 className={Styles.title}>Oferta Exclusiva</h3>
-                <div className={Styles.pricecard}>
-                    <div className={Styles.percent}>-20%</div>
-                    <div className={Styles.price}>
-                        <p className={Styles.fullprice}>R$99,90</p>
-                        <h4 className={Styles.discountprice}>R$79,90</h4>
-                    </div>
+import Styles from "./saleCard.module.css";
+import Button from "@/components/forms/button/button";
+
+const SaleCard = ({ image, discount, fullPrice, discountPrice, onAdd }) => {
+  return (
+      <div className={Styles.salecard}>
+        <Image src={`/products/${image}`} alt={image} width={250} height={300}  />
+        <div className={Styles.info}>
+            <h3 className={Styles.title}>Ofertas Exclusivas</h3>
+            <div className={Styles.pricecard}>
+                <div className={Styles.percent}>-{discount}</div>
+                <div className={Styles.price}>
+                    <p className={Styles.fullprice}>R${fullPrice}</p>
+                    <h4 className={Styles.discountprice}>R${discountPrice}</h4>
                 </div>
-                <Button>Adicionar ao Carrinho</Button>
             </div>
+            <Button onClick={onAdd} fullWidth>Adicionar ao carrinho</Button>
         </div>
-    )
-}
+      </div>
+
+  );
+};
+
+export default SaleCard;
