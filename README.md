@@ -4,7 +4,13 @@ Bem-vindo ao projeto Steam Store Clone! Este é um projeto de interface front-en
 
 ## Visão Geral
 
+<<<<<<< Updated upstream
 Este projeto é uma demonstração de como criar uma interface de loja de jogos semelhante à Steam, usando as tecnologias populares Next.js e React.js. Ele inclui páginas de listagem de jogos, detalhes de jogos individuais e recursos de pesquisa para os usuários explorarem e encontrarem jogos interessantes.
+=======
+- NextJs na sua versão 13.4.1
+- ReactJs na versão 18.2.0
+- [Figma](https://www.figma.com/file/ZgXjnDw8VuG4hmdgpU4Y91/DevSteam?type=design&node-id=0-1&mode=design)
+>>>>>>> Stashed changes
 
 ## Funcionalidades Principais
 
